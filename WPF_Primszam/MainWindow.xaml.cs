@@ -31,7 +31,7 @@ namespace WPF_Primszam
         {
             if (a % 2 == 0 || a==1) return false;
             //int h = Convert.ToInt32(Math.Sqrt(a));
-            for(int i=3; i<(Convert.ToInt32(Math.Sqrt(a))); i+=2)
+            for(int i=3; i<((int)(Math.Sqrt(a))); i+=2)
             {
                 if (a % i == 0) return false;
             }
