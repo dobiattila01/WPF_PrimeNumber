@@ -37,8 +37,12 @@ namespace WPF_Primszam
         }
         private void generatePrime_button_Click(object sender, RoutedEventArgs e)
         {
-            if (textBox == null) return;
             textBox.Clear();
+            if (generatedPrimeElement_textbox.Text == "")
+            {
+                textBox.Text = "Please write a number the generate button next to in field!";
+                return;
+            }
             Size = int.Parse(generatedPrimeElement_textbox.Text);
             int[] numbers = new int[Size];
             textBox.AppendText(2 +", ");
