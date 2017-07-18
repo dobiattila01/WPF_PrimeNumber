@@ -11,16 +11,16 @@
             <RowDefinition Height="2*"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <Grid Grid.Row="0">            
-            <TextBox x:Name="textBox" Width="Auto" Height="Auto" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <Grid Grid.Row="0">
+            <TextBox x:Name="textBox" Width="Auto" Height="Auto" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" />
         </Grid>
         <Grid Grid.Row="1">
 
             <Grid Grid.Column="0">
                 <Button x:Name="generatePrime_button" Content="Generate" Height="30" Margin="5" Click="generatePrime_button_Click" HorizontalAlignment="Left" VerticalAlignment="Top"></Button>
-                <TextBox x:Name="generatedPrimeElement_textbox" HorizontalAlignment="Stretch" Height="auto" Margin="64,10,354.4,62.2" TextWrapping="Wrap" Width="100" />
+                <TextBox x:Name="generatedPrimeElement_textbox" HorizontalAlignment="Stretch" VerticalAlignment="Top" Height="30" Margin="64,5,10.4,72.2" TextWrapping="Wrap" />
             </Grid>
         </Grid>
-        
+
     </Grid>
 </Window>
