@@ -39,6 +39,7 @@ namespace WPF_Primszam
         }
         private void generatePrime_button_Click(object sender, RoutedEventArgs e)
         {
+            if (textBox == null) return;
             textBox.Clear();
             Size = int.Parse(generatedPrimeElement_textbox.Text);
             int[] numbers = new int[Size];
